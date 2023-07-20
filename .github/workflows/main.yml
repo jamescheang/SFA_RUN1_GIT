@@ -8,11 +8,14 @@ jobs:
     runs-on: Ubuntu-22.04 
     steps:
       - name: Checkout private repo remotely
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.4.2
         with:
           repository: ICT-CET-Activities/hiddenRepo
-          path: '/home/runner/work/SFA_RUN1_GIT/SFA_RUN1_GIT'
+          path: remote
           token: ${{secrets.TOKEN}}
       - name: Show hidden files 
         run: |
-          cd '/home/runner/work/SFA_RUN1_GIT/SFA_RUN1_GIT' ls
+          cd remote 
+          ls
+          cat myText.txt
+          cd ..
