@@ -8,11 +8,11 @@ jobs:
     runs-on: Ubuntu-18.04 
     steps:
       - name: Checkout private repo remotely
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           repository: ICT-CET-Activities/hiddenRepo
           path: "/Users/james/Stuff/FTP 2023/Devops/gitSFA-Actions"
-          token: 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
+          token: ${{secrets.TOKEN}}
       - name: Show hidden files 
         run: |
           cd "/Users/james/Stuff/FTP 2023/Devops/gitSFA-Actions" ls
