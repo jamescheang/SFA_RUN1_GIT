@@ -10,7 +10,7 @@ jobs:
       - name: Checkout private repo remotely
         uses: actions/checkout@v2
         with:
-          repository: https://github.com/ICT-CET-Activities/hiddenRepo
+          repository: ICT-CET-Activities/hiddenRepo
           path: "/Users/james/Stuff/FTP 2023/Devops/gitSFA-Actions"
           token: ${{secrets.TOKEN}}
       - name: Show hidden files 
