@@ -8,7 +8,7 @@ jobs:
     runs-on: Ubuntu-18.04 
     steps:
       - name: Checkout private repo remotely
-        uses: actions/checkout@v2 
+        uses: actions/checkout@v3
         with:
           repository: ICT-CET-Activities/hiddenRepo
           path: "/Users/james/Stuff/FTP 2023/Devops/gitSFA-Actions"
